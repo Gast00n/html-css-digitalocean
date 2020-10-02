@@ -187,9 +187,20 @@ border: 1px #1633ff solid;
     font-size: 16px;
 }
 
-.partners-logo li {
+.partners a,
+.partners a i {
+    text-decoration: none;
+}
+
+ul.partners-logo li {
+    display: inline-block;
     width: calc((100%/2) - 10px);
-    margin: 0 5px;
+    margin: 0 1px;
+}
+
+ul.partners-logo img {
+    vertical-align: middle;
+    width: 100%;
 }
 
 
@@ -241,12 +252,10 @@ border: 1px #1633ff solid;
         font-size: 58px;
     }
 
-    .partners-logo li {
-        display: inline-block;
+    ul.partners-logo li {
         width: calc((100%/6) - 10px);
-        margin: 0 5px;
-    }
-    
+        margin: 0 2px;
+    }  
     
 
 }
