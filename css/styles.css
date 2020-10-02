@@ -15,14 +15,14 @@ section {
 h1,
 h2,
 h3,
-h4,
-h5 {
+h4 {
     color: rgb(3, 27, 78);
 }
 
 h1 {
     font-size: 58px;
     color: #fff;
+    font-weight: 900;
 }
 
 h2 {
@@ -48,6 +48,33 @@ a.blue-link i {
 /* HEADER */
 
 /* Navbar */
+.navbar,
+.navbar a {
+    color:#031c4e;
+}
+
+.navbar {
+    height: 65px;
+}
+
+.navbar .container {
+    position: relative;
+}
+
+.navbar-header a img {
+    width: 160px;
+    vertical-align: middle;
+}
+
+.navbar li a {
+    line-height: 30px;
+}
+
+.navbar button {
+    background: #fff;
+    border: none;
+    color: #3a8aff;
+}
 
 /* HeroBox */
 
@@ -75,7 +102,41 @@ a.blue-link i {
 }
 
 /* TABLETS */
-@media (min-width: 768px) { ... }
+@media (min-width: 768px) {
+
+
+
+}
 
 /* LAPTOP */
-@media (min-width: 992px) { ... }
+@media (min-width: 992px) {
+
+    h1 {
+        font-size: 50px;
+    }    
+
+    .menu-left {
+        margin-left:65px;
+    }
+}
+
+
+/* Hamburger Specific */
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    /* Mostra hamburger */
+    .navbar-toggle {
+        display: block;
+        position: absolute;
+        right: 0;
+    }
+    /* Nascondi contenitore menu */
+    .navbar-collapse {
+        display: none;
+    }
+
+    .navbar button .icon-bar {
+        background: #3a8aff;
+    }
+    
+}
