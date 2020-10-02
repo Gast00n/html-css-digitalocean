@@ -49,6 +49,43 @@ a.blue-link i {
     text-decoration: underline;
 }
 
+/* Slideshow Utility */
+
+
+
+.slide {
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.slide p.caption {
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.navigation-sx,
+.navigation-dx {
+    display: none;
+    font-size: 65px;
+}
+
+.navigation-dots i {
+    font-size: 12px;
+    color: transparent;
+    border: 2px #006aff solid;
+    border-radius: 50%;
+    background: transparent;}
+
+.navigation-dots i:first-child {
+    background: #006aff;
+}
+
+
 /* HEADER */
 
 /* Navbar */
@@ -246,44 +283,47 @@ ul.partners-logo img {
     margin-bottom: 50px;
 }
 
+/* Business */
 
-.slide {
-    position: relative;
+.business .heading {
+    padding-bottom: 20px;
 }
 
-.slide img {
-    width: 100%;
-    vertical-align: middle;
+.business a {
+    color: #046fff;
 }
-
-.slide p.caption {
-    padding: 10px 0;
-    font-size: 14px;
-    font-weight: 700;
-}
-
-.navigation-sx,
-.navigation-dx {
-    display: none;
-    font-size: 65px;
-}
-
-.navigation-dots i {
-    font-size: 12px;
-    color: transparent;
-    border: 2px #006aff solid;
-    border-radius: 50%;
-    background: transparent;}
-
-.navigation-dots i:first-child {
-    background: #006aff;
-}
-
 
 /* Customer */
 .customer {
     background: rgb(0,30,153);
     background: linear-gradient(0deg, rgba(0,30,153,1) 0%, rgba(0,72,197,1) 100%); 
+    color: #fff;
+}
+
+.customer h2 {
+    color: #fff;
+}
+
+.customer .heading {
+    padding-bottom:30px;
+}
+
+.box-custom-dx {
+    margin-top:35px;
+}
+
+.line-table {
+    font-size: 13px;
+    line-height: 25px;
+    border-bottom: 1px #fff solid;
+}
+
+.line-table .col-xs-6 p {
+    color: #bbc8ea;
+}
+
+.line-table a {
+    color: #00d7d2;
 }
 
 /* Call To Action */
@@ -371,6 +411,14 @@ ul.partners-logo img {
 
     .specifics ul {
         margin-left: 100px;
+    }
+
+    .box-custom-sx,
+    .box-custom-dx {
+        margin-top:0;
+        width: calc((100%/2) - 20px);
+        margin-right: 10px;
+        margin-left: 10px;
     }
 }
 
