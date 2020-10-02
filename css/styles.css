@@ -74,7 +74,16 @@ a.blue-link i {
     font-size: 65px;
 }
 
+.navigation-dots {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -25px;
+}
+
 .navigation-dots i {
+    margin-right: 5px;
+    margin-left: 5px;
     font-size: 12px;
     color: transparent;
     border: 2px #006aff solid;
@@ -326,11 +335,77 @@ ul.partners-logo img {
     color: #00d7d2;
 }
 
+/* Feedback */
+
+.feedback {
+    background: #f3f5f9;
+}
+
+.feedback .heading {
+    padding: 20px 0;
+}
+
+.feedback .slideshow {
+    margin-top: 30px;
+}
+
+.feedback .slide {
+    padding: 100px 5px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.feedback img {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.feedback .slide span.feed-name {
+    color: #031c4e;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+
+.navigation-dots i {
+    font-size:10px;
+}
+
+.feedback .slide a,
+.feedback .slide a i {
+    text-decoration: none;
+}
+
 /* Call To Action */
 .callto {
     background: rgb(0,30,153);
     background: linear-gradient(0deg, rgba(0,30,153,1) 0%, rgba(0,72,197,1) 100%); 
 }
+
+.callto h2 {
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.callto a.btn-ocean {
+    display: inline-block;
+    line-height: 18px;
+    padding: 14px;
+    background: #fff;
+    color: #006aff;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.callto a.btn-ocean:hover {
+    background: #9bc5ff;
+    color: #1a58d2;
+}
+
 
 /* FIXED TOOLTIP */
 
@@ -393,8 +468,7 @@ ul.partners-logo img {
         top: 50%;
         transform: translateY(-50%);
         color: #031c4e;
-    }
-
+    }    
 
 }
 
