@@ -68,6 +68,13 @@ a.blue-link i {
 
 .navbar li a {
     line-height: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.navbar li a:hover {
+    color: #006aff;
+    background: none;
 }
 
 .navbar button {
@@ -76,7 +83,36 @@ a.blue-link i {
     color: #3a8aff;
 }
 
+.btn-ocean {
+    background: #fff;
+    padding: 5px 10px;
+    border: 1px #006aff solid;
+}
+
+.navbar li a.btn-ocean {
+    color: #006aff;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+
+
+
 /* HeroBox */
+
+
+/* Customer */
+.customer {
+    background: rgb(0,30,153);
+    background: linear-gradient(0deg, rgba(0,30,153,1) 0%, rgba(0,72,197,1) 100%); 
+}
+
+/* Call To Action */
+.callto {
+    background: rgb(0,30,153);
+    background: linear-gradient(0deg, rgba(0,30,153,1) 0%, rgba(0,72,197,1) 100%); 
+}
 
 /* FIXED TOOLTIP */
 
@@ -138,5 +174,5 @@ a.blue-link i {
     .navbar button .icon-bar {
         background: #3a8aff;
     }
-    
+
 }
