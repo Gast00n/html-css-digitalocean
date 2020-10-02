@@ -28,11 +28,14 @@ h1 {
 
 h2 {
     font-size: 36px;
+    font-weight: 700;
 }
 
 h3 {
-    font-size: 28px;
+    font-size: 20px;
+    font-weight: 700;
 }
+
 
 /* UTILITIES */
 
@@ -203,6 +206,74 @@ ul.partners-logo img {
     width: 100%;
 }
 
+/* Specifics */
+.specifics p {
+    margin: 15px 0;
+    font-size: 20px;
+}
+
+.specifics .heading {
+    margin-bottom: 50px;
+}
+
+.specifics ul {
+    border-left: 1px #cccccc solid;
+}
+
+.specifics ul li {
+    list-style: none;
+    line-height: 50px;
+    margin-left: -25px;
+}
+
+.specifics ul li a {
+    color: #75809a;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.specifics .box-item p {
+    font-size: 16px;
+}
+
+/* Design */
+
+.design {
+    background:#f3f5f9;
+}
+
+.slide {
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.slide p.caption {
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.navigation-sx,
+.navigation-dx {
+    display: none;
+    font-size: 65px;
+}
+
+.navigation-dots i {
+    font-size: 12px;
+    color: transparent;
+    border: 2px #006aff solid;
+    border-radius: 50%;
+    background: transparent;}
+
+.navigation-dots i:first-child {
+    background: #006aff;
+}
+
 
 /* Customer */
 .customer {
@@ -257,6 +328,28 @@ ul.partners-logo img {
         margin: 0 2px;
     }  
     
+    .specifics ul {
+        margin-left: 50px;
+    }
+    
+    .navigation-sx {
+        display: block;
+        position: absolute;
+        left: -45px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #6f7b97;
+    }
+
+    .navigation-dx {
+        display: block;
+        position: absolute;
+        right: -45px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #031c4e;
+    }
+
 
 }
 
@@ -269,6 +362,10 @@ ul.partners-logo img {
 
     .menu-left {
         margin-left:65px;
+    }
+
+    .specifics ul {
+        margin-left: 100px;
     }
 }
 
