@@ -105,6 +105,7 @@ a.blue-link i {
 
 .navbar {
     height: 65px;
+    margin-bottom: 0;
 }
 
 .navbar .container {
@@ -407,9 +408,57 @@ ul.partners-logo img {
 }
 
 
+/* Footer */
+
+footer {
+    padding: 50px 0;
+    background: #031c4e;
+    color: #5a6887;
+}
+
+footer a{
+    color: #8b94a9;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer h3 {
+    color: #fff;
+}
+
+footer li {
+    list-style: none;
+    margin-left: -40px;
+    padding: 6px 0;
+}
+
+footer ul.social-foot li {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 24px;
+}
+
+footer ul.social-foot li:first-child {
+    display: inline-block;
+    margin-left: -40px;
+}
+
+footer .copy {
+    color: #8b94a9;
+}
+
 /* FIXED TOOLTIP */
 
-.tooltip {
+.fixed-help {
+    position: fixed;
+    left: 10px;
+    bottom: 50px;
+}
+
+.tooltip-text {
     position: relative;
     width: 300px;
     padding:10px;
@@ -419,7 +468,7 @@ ul.partners-logo img {
     filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.4));
 }
   
-  .tooltip::before {
+  .tooltip-text::before {
     content:'';
     position:absolute;
     bottom: 10px;
@@ -428,6 +477,37 @@ ul.partners-logo img {
     height: 8px;
     background: #fff;
     transform: rotate(45deg);
+}
+
+.sharkbox {
+    position: absolute;
+    top: -70px;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background: #006aff;
+    border-radius: 5px;
+}
+
+.sharkbox .red-dot {
+    background: red;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 22px;
+    font-weight: 700;
+    position: absolute;
+    left: 40px;
+    top: -15px;
+    border: 4px #fff solid;
+    font-size: 12px;
+}
+
+.sharkbox img {
+    width: 100%;
 }
 
 /* TABLETS */
@@ -493,6 +573,18 @@ ul.partners-logo img {
         width: calc((100%/2) - 20px);
         margin-right: 10px;
         margin-left: 10px;
+    }
+
+    .fixed-help {
+        bottom: 30px;
+        right: 120px;
+        left: auto;
+    }
+
+    .sharkbox {
+        left: auto;
+        top: 7px;
+        right: -80px;
     }
 }
 
